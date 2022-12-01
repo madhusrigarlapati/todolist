@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 const todoList = () => {
   all = [];
@@ -15,9 +14,10 @@ const todoList = () => {
     // ..
     // ..
     // ..
-    const a = formattedDate(
-      new Date(new Date().setDate(dateToday.getDate() - 1))
-    );
+    var z = new Date();
+    z.setDate(z.getDate() - 1);
+    const a = z.toLocaleDateString("en-CA");
+    // const a=formattedDate(new Date(new Date().setDate(dateToday.getDate() - 1)));
     let b = [];
     for (let i = 0; i < all.length; i++) {
       if (all[i].dueDate == a) {
@@ -34,7 +34,7 @@ const todoList = () => {
     // ..
     // ..
     // ..
-    const a = formattedDate(dateToday);
+    const a = new Date().toLocaleDateString("en-CA");
     let b = [];
     for (let i = 0; i < all.length; i++) {
       if (all[i].dueDate == a) {
@@ -51,9 +51,9 @@ const todoList = () => {
     // ..
     // ..
     // ..
-    const a = formattedDate(
-      new Date(new Date().setDate(dateToday.getDate() + 1))
-    );
+    var z = new Date();
+    z.setDate(z.getDate() + 1);
+    var a = z.toLocaleDateString("en-CA");
     let b = [];
     for (let i = 0; i < all.length; i++) {
       if (all[i].dueDate == a) {

@@ -8,7 +8,7 @@
   },
   "name": "todo",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "todo.js",
   "dependencies": {
     "ansi-escapes": "^4.3.2",
     "ansi-regex": "^5.0.1",
@@ -202,7 +202,7 @@
   "lint-staged": {
     "*.js": [
       "eslint",
-      "prettier --write ."
+      "prettier --write"
     ]
   },
   "repository": {
